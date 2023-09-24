@@ -1,0 +1,12 @@
+#!/bin/sh
+
+isodate() {
+  date --rfc-3339 seconds
+}
+
+main() {
+  isodate
+	echo "Hi, $*!"
+}
+
+main "$@"
